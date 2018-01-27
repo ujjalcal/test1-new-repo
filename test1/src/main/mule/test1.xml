@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<flow name="test1Flow" doc:id="7984d5c6-e5e4-42c0-b3ab-cdc00b224818" >
+		<scheduler doc:name="Scheduler" doc:id="acb062f9-5bed-4db9-a073-2df6ed95ec34" >
+			<scheduling-strategy >
+				<fixed-frequency />
+			</scheduling-strategy>
+		</scheduler>
+		<logger level="INFO" doc:name="Log" doc:id="576bc62d-0a8f-4188-8a97-1bbf6f0f1b8c" message="Hello World"/>
+	</flow>
+</mule>
